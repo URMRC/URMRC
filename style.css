@@ -7,10 +7,8 @@ body {
 }
 
 .hero {
-    background-image: url("images/urmrc24photodedos.JPG");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: red !important;
+    min-height: 700px;
 }
 .container {
   max-width: 1000px;
