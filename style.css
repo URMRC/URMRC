@@ -7,8 +7,9 @@ body {
 }
 
 .hero {
-    background: red !important;
-    min-height: 700px;
+  background: url("images/urmrc24.JPG") center center / cover no-repeat !important;
+  min-height: 700px;
+  position: relative;
 }
 .container {
   max-width: 1000px;
