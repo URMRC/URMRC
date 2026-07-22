@@ -646,82 +646,7 @@
             color: #bdc3c7;
         }
 
-        /* Sponsors Section */
-        .sponsors-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .sponsor-item {
-            flex: 0 1 auto;
-            text-align: center;
-            min-width: 200px;
-            max-width: 400px;
-        }
-
-        .sponsor-item img {
-            height: 120px;
-            width: auto;
-            max-width: 100%;
-            object-fit: contain;
-        }
-
-        .larger-sponsor {
-            width: 320px !important;
-            height: auto !important;
-        }
-
-        .extra-large-sponsor {
-            width: 400px !important;
-            height: auto !important;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-
-            .btn-primary-custom,
-            .btn-secondary-custom {
-                margin-right: 0;
-                display: block;
-                width: 100%;
-                margin-bottom: 1rem;
-            }
-
-            section h2 {
-                font-size: 2rem;
-            }
-
-            .committee-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 1.5rem;
-            }
-
-            .member-image {
-                width: 150px;
-                height: 150px;
-            }
-
-            .benefit-box {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .benefit-icon {
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
-
+      
             /* Sponsors responsive */
             .sponsors-grid {
                 gap: 1.5rem;
@@ -1241,20 +1166,19 @@ background:url('images/urmrc24.JPG') center center/cover no-repeat;
                 <div class="col-lg-6" data-aos="fade-up">
                     <h4 style="color: var(--accent-color); margin-bottom: 1.5rem;">Target Audience</h4>
                     <ul style="font-size: 1.1rem; list-style: none; padding: 0;">
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>PhD students</li>
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Early-career researchers</li>
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>R&D Engineers</li>
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Researchers and Faculty</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Master students</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Bachlor students</li>
+
                     </ul>
                 </div>
 
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                     <h4 style="color: var(--accent-color); margin-bottom: 1.5rem;">Background Required</h4>
                     <ul style="font-size: 1.1rem; list-style: none; padding: 0;">
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Computer Science</li>
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Applied Mathematics</li>
-                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Industrial Engineering</li>
                         <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Basic programming skills (Python, C/C++, etc.)</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i>Robotic Skills</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i> Robot Operating Sustem (ROS)</li>
+                        <li style="margin-bottom: 1rem;"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-right: 0.8rem;"></i> Computer Vision </li>
                     </ul>
                 </div>
             </div>
@@ -1292,84 +1216,6 @@ background:url('images/urmrc24.JPG') center center/cover no-repeat;
 
    
 
-    <!-- Challenge / Competition Section -->
-    <section id="competition" style="background: rgba(52, 152, 219, 0.05);">
-        <div class="container">
-            <h2 data-aos="fade-right">Challenge & Competition</h2>
-            <p class="section-subtitle" data-aos="fade-right" data-aos-delay="100">Test your skills and win prizes by applying what you learned during the summer school.</p>
-
-            <div class="row" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-md-4 mb-4">
-                    <div class="card prize-card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">1st Prize</h5>
-                            <p class="card-text">350€</p>
-                            <p class="card-description">Awarded to the individual with the most effective and innovative solution.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card prize-card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">2nd Prize</h5>
-                            <p class="card-text">250€</p>
-                            <p class="card-description">Awarded to the runner-up individual demonstrating strong methodology.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card prize-card">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">3rd Prize</h5>
-                            <p class="card-text">150€</p>
-                            <p class="card-description">Awarded to the individual with the most promising approach and insights.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2 data-aos="fade-right">Contact</h2>
-            <p class="section-subtitle" data-aos="fade-right" data-aos-delay="100">Need help or have questions? Reach out to our team.</p>
-
-            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-8">
-                    <img src="img/contacts.png" alt="Contact Information" style="width: 100%; border-radius: 10px;" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sponsors Section -->
-    <section id="sponsors" style="background: var(--light-bg); padding: 60px 0;">
-        <div class="container">
-            <h2 data-aos="fade-right" style="text-align: center; margin-bottom: 3rem;">Our Sponsors</h2>
-            <div class="sponsors-grid" data-aos="fade-up" data-aos-delay="200">
-                <div class="sponsor-item">
-                    <img src="img/sponsors/ea.png" alt="EA Sponsor" class="ea-sponsor" />
-                </div>
-                <div class="sponsor-item">
-                    <img src="img/sponsors/irimas.jpg" alt="IRIMAS Sponsor" class="extra-large-sponsor" />
-                </div>
-                <div class="sponsor-item">
-                    <img src="img/sponsors/uha.jpg" alt="UHA Sponsor" class="larger-sponsor" />
-                </div>
-                <div class="sponsor-item">
-                    <img src="img/sponsors/roadef.png" alt="ROADEF Sponsor" class="larger-sponsor" />
-                </div>
-
-                <div class="sponsor-item">
-                    <img src="img/sponsors/gdrro.png" alt="ROADEF Sponsor" class="larger-sponsor" />
-                </div>
-                
-                
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
