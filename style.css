@@ -7,7 +7,7 @@ body {
 }
 
 .hero {
-  background: url("images/urmrc24.JPG") center center / cover no-repeat !important;
+  background: url("images/urmrc24.png") center center / cover no-repeat !important;
   min-height: 700px;
   position: relative;
 }
