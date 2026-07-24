@@ -844,6 +844,343 @@ background:url('images/urmrc24.png') center center/cover no-repeat;
         <div class="container">
             <h2 data-aos="fade-right">Overview</h2>
             <p class="section-subtitle" data-aos="fade-right" data-aos-delay="100">Understanding Modern Optimization Approaches</p>
+
+
+<meta charset="UTF-8">
+<title>Les missions de l'URMRC</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    padding:40px;
+}
+
+.container{
+    max-width:1500px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    font-size:60px;
+    color:#0d2359;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:28px;
+    color:#444;
+    margin-bottom:40px;
+    line-height:1.4;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+    align-items:center;
+}
+
+.column{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.card{
+
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.blue{
+    border-top:8px solid #0d4cb3;
+}
+
+.green{
+    border-top:8px solid #238636;
+}
+
+.orange{
+    border-top:8px solid #ff6a00;
+}
+
+.purple{
+    border-top:8px solid #6b3fd1;
+}
+
+.number{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.blue .number{color:#0d4cb3;}
+.green .number{color:#238636;}
+.orange .number{color:#ff6a00;}
+.purple .number{color:#6b3fd1;}
+
+.title{
+    font-size:34px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.blue .title{color:#0d4cb3;}
+.green .title{color:#238636;}
+.orange .title{color:#ff6a00;}
+.purple .title{color:#6b3fd1;}
+
+.line{
+    width:70px;
+    height:4px;
+    margin-bottom:20px;
+}
+
+.blue .line{background:#0d4cb3;}
+.green .line{background:#238636;}
+.orange .line{background:#ff6a00;}
+.purple .line{background:#6b3fd1;}
+
+.text{
+    font-size:24px;
+    line-height:1.6;
+    color:#333;
+}
+
+.center img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.bottom{
+
+    margin-top:40px;
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.bottom-grid{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    gap:40px;
+    align-items:center;
+}
+
+.final{
+    display:flex;
+    gap:20px;
+}
+
+.final .number{
+    font-size:60px;
+}
+
+.timeline{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.step{
+
+    flex:1;
+    margin:10px;
+    border:3px solid;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+.step1{border-color:#0d4cb3;color:#0d4cb3;}
+.step2{border-color:#238636;color:#238636;}
+.step3{border-color:#ff6a00;color:#ff6a00;}
+.step4{border-color:#6b3fd1;color:#6b3fd1;}
+
+.arrow{
+    font-size:40px;
+    color:#0d2359;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>LES MISSIONS DE L'URMRC</h1>
+
+<p class="subtitle">
+Les équipes développent des algorithmes avancés pour relever une série de défis
+en robotique mobile avec le robot TurtleBot.
+</p>
+
+<div class="grid">
+
+<div class="column">
+
+<div class="card blue">
+
+<div class="number">01</div>
+
+<div class="title">SUIVI DE LA PISTE</div>
+
+<div class="line"></div>
+
+<div class="text">
+
+Le robot parcourt une portion linéaire puis courbe de la piste.
+Il s'arrête à la détection d'un damier noir et blanc placé transversalement sur la piste.
+
+</div>
+
+</div>
+
+<div class="card orange">
+
+<div class="number">03</div>
+
+<div class="title">ÉVITEMENT D'OBSTACLES EN ZONE FERMÉE</div>
+
+<div class="line"></div>
+
+<div class="text">
+
+Le robot entre dans la zone après avoir détecté un panneau.
+Il traverse la zone en évitant les obstacles.
+La caméra est interdite dans cette mission.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="center">
+
+<!-- Remplace robot.jpg par ton image -->
+<img src="robot.jpg">
+
+</div>
+
+<div class="column">
+
+<div class="card green">
+
+<div class="number">02</div>
+
+<div class="title">ÉVITEMENT D'OBSTACLES EN ZONE LIBRE</div>
+
+<div class="line"></div>
+
+<div class="text">
+
+Dans une zone délimitée, le robot évite les obstacles sans sortir de la piste et s'arrête devant une barrière.
+
+</div>
+
+</div>
+
+<div class="card purple">
+
+<div class="number">04</div>
+
+<div class="title">MANŒUVRE DE STATIONNEMENT</div>
+
+<div class="line"></div>
+
+<div class="text">
+
+Le robot détecte la zone de stationnement et choisit une place libre pour se garer correctement.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="bottom">
+
+<div class="bottom-grid">
+
+<div class="final">
+
+<div class="number" style="color:#0d4cb3;">05</div>
+
+<div>
+
+<div class="title" style="color:#0d2359;">
+MISSION FINALE
+</div>
+
+<div class="text">
+Le robot enchaîne les quatre missions dans un ordre imposé.
+</div>
+
+</div>
+
+</div>
+
+<div class="timeline">
+
+<div class="step step1">
+01<br>
+Suivi de la piste
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step step2">
+02<br>
+Zone libre
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step step3">
+03<br>
+Zone fermée
+</div>
+
+<div class="arrow">➜</div>
+
+<div class="step step4">
+04<br>
+Stationnement
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+            
         </div>
     </section>
 
