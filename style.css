@@ -41,6 +41,10 @@ body {
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
+.mission-content {
+    width: 650px;
+    max-width: 650px;
+}
 .member-email {
     text-align: center;
     font-weight: normal;
