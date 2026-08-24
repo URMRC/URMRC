@@ -16,7 +16,11 @@ body {
   margin: 0 auto;
   padding: 2rem 1.5rem;
 }
-
+.member-email {
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+}
 section {
   margin-bottom: 3rem;
 }
