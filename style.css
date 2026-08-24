@@ -21,6 +21,12 @@ body {
     animation: blink 1s infinite;
 }
 
+.missions-title {
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
 @keyframes blink {
     0%, 50% { opacity: 1; }
     51%, 100% { opacity: 0.2; }
