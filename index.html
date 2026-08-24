@@ -804,13 +804,268 @@ background:url('images/urmrc24.png') center center/cover no-repeat;
         <div class="container">
             <h2 data-aos="fade-right">Overview</h2>
             <p class="section-subtitle">Teams develop advanced algorithms to tackle a series of challenges in mobile robotics using the TurtleBot robot:</p>
-                <ul style="font-size: 1.1rem; color: #4b4b4b;">
-                    <li>Line following: The robot follows a straight and curved track and stops when it detects a black-and-white checkerboard.</li>
-                    <li>Obstacle avoidance – open area: The robot avoids randomly placed obstacles within a marked area and stops before a barrier.</li>
-                    <li>Obstacle avoidance – closed area: The robot crosses the area while avoiding obstacles. Camera use is prohibited inside.</li>
-                    <li>Parking: The robot detects the parking area, identifies an available space, and parks correctly.</li>
-                    <li>Fifth mission: To be defined.</li>
-                </ul>
+<style>
+.missions-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Grande forme à gauche */
+.missions-title {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 180px;
+    height: 180px;
+    border: 2px solid #0066CC;
+    background: white;
+    clip-path: polygon(
+        25% 6%, 75% 6%,
+        100% 50%,
+        75% 94%, 25% 94%,
+        0 50%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    z-index: 2;
+}
+
+.missions-title strong {
+    color: #0066CC;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.missions-title span {
+    color: #4b4b4b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Ligne verticale */
+.missions-line {
+    position: absolute;
+    left: 235px;
+    top: 55px;
+    bottom: 55px;
+    width: 2px;
+    background: #b8b8b8;
+}
+
+/* Chaque mission */
+.mission {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 135px;
+    margin-bottom: 18px;
+}
+
+/* Numéro hexagonal */
+.mission-number {
+    position: relative;
+    z-index: 3;
+    flex: 0 0 85px;
+    height: 85px;
+
+    background: white;
+    border: 3px solid #0066CC;
+
+    clip-path: polygon(
+        25% 3%, 75% 3%,
+        100% 50%,
+        75% 97%, 25% 97%,
+        0 50%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0066CC;
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Petit trait entre le numéro et le contenu */
+.mission-number::after {
+    content: "";
+    position: absolute;
+    left: 82px;
+    top: 50%;
+    width: 45px;
+    height: 2px;
+    background: #0066CC;
+}
+
+/* Contenu */
+.mission-content {
+    margin-left: 65px;
+    flex: 1;
+
+    border: 2px dashed #0066CC;
+    border-radius: 18px;
+
+    padding: 22px 30px;
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+/* Titre bleu */
+.mission-content h3 {
+    margin: 0 0 10px 0;
+    color: #0066CC;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Description */
+.mission-content p {
+    margin: 0;
+    color: #4b4b4b;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Adaptation écran */
+@media (max-width: 800px) {
+
+    .missions-title {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0 auto 30px auto;
+    }
+
+    .missions-line {
+        left: 42px;
+        top: 220px;
+        bottom: 30px;
+    }
+
+    .mission {
+        align-items: flex-start;
+    }
+
+    .mission-number {
+        flex: 0 0 70px;
+        height: 70px;
+        font-size: 23px;
+    }
+
+    .mission-number::after {
+        left: 68px;
+        width: 25px;
+    }
+
+    .mission-content {
+        margin-left: 35px;
+        padding: 18px;
+    }
+
+    .mission-content h3 {
+        font-size: 17px;
+    }
+
+    .mission-content p {
+        font-size: 14px;
+    }
+}
+</style>
+
+
+<div class="missions-container">
+
+    <!-- Titre principal -->
+    <div class="missions-title">
+        <strong>MISSIONS</strong>
+        <span>DU ROBOT</span>
+    </div>
+
+    <!-- Ligne centrale -->
+    <div class="missions-line"></div>
+
+
+    <!-- Mission 1 -->
+    <div class="mission">
+        <div class="mission-number">01</div>
+
+        <div class="mission-content">
+            <h3>Line Following</h3>
+            <p>
+                The robot follows a straight and curved track and stops
+                when it detects a black-and-white checkerboard.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Mission 2 -->
+    <div class="mission">
+        <div class="mission-number">02</div>
+
+        <div class="mission-content">
+            <h3>Obstacle Avoidance – Open Area</h3>
+            <p>
+                The robot avoids randomly placed obstacles within a marked
+                area and stops before a barrier.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Mission 3 -->
+    <div class="mission">
+        <div class="mission-number">03</div>
+
+        <div class="mission-content">
+            <h3>Obstacle Avoidance – Closed Area</h3>
+            <p>
+                The robot crosses the area while avoiding obstacles.
+                Camera use is prohibited inside.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Mission 4 -->
+    <div class="mission">
+        <div class="mission-number">04</div>
+
+        <div class="mission-content">
+            <h3>Parking</h3>
+            <p>
+                The robot detects the parking area, identifies an available
+                space, and parks correctly.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Mission 5 -->
+    <div class="mission">
+        <div class="mission-number">05</div>
+
+        <div class="mission-content">
+            <h3>Fifth Mission</h3>
+            <p>
+                To be defined.
+            </p>
+        </div>
+    </div>
+
+</div>
 
 <!--
 
