@@ -165,7 +165,7 @@ section {
 .mission-number::after{
     content:"";
     position:absolute;
-    left: 58px;   /* au lieu de 70px */
+    left: calc(100% - 12px);
     top: 50%;
     width: 42px;  /* compense la longueur */
     height: 2px;
