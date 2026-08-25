@@ -138,3 +138,55 @@ section {
 .navbar .nav-link:hover {
   color: #ffd166 !important;
 }
+/* NUMÉRO */
+.mission-number {
+    position: relative;
+    z-index: 3;
+
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    background: #0066CC;
+
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0066CC;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Intérieur blanc : crée un contour bleu net */
+.mission-number::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 2px;
+
+    background: white;
+
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+    );
+
+    z-index: -1;
+}
