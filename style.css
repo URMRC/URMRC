@@ -156,25 +156,23 @@ section {
 /* NUMÉRO */
 /* HEXAGONE NUMÉRO */
 .mission-number{
+    position:relative;
     width:70px;
     height:70px;
-    position:relative;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
+    color:#0066CC;
     font-size:24px;
     font-weight:bold;
-    color:#0066CC;
     background:transparent;
 }
 
 .mission-number::before{
     content:"";
     position:absolute;
-    inset:0;
-
-    background:center/100% 100% no-repeat;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='25,3 75,3 97,50 75,97 25,97 3,50' fill='none' stroke='%230066CC' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E");
+    inset:2px;              /* marge pour éviter les bouts de trait */
+    background:no-repeat center;
+    background-size:contain;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='25,6 75,6 94,50 75,94 25,94 6,50' fill='none' stroke='%230066CC' stroke-width='4' stroke-linejoin='miter' stroke-linecap='butt'/%3E%3C/svg%3E");
 }
