@@ -155,20 +155,42 @@ section {
 }
 /* NUMÉRO */
 /* HEXAGONE NUMÉRO */
+/* HEXAGONE NUMÉRO */
 .mission-number{
-    position:relative;
-    width:70px;
-    height:70px;
-    flex-shrink:0;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0066CC;
+    font-size: 24px;
+    font-weight: bold;
+
+    background: white;
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+    );
+    border: 2px solid #0066CC;
+    box-sizing: border-box;
 }
 
+/* Trait horizontal vers le rectangle */
 .mission-number::after{
     content:"";
     position:absolute;
-    left: calc(100% - 12px);
-    top: 50%;
-    width: 42px;  /* compense la longueur */
-    height: 2px;
+    left:100%;
+    top:50%;
+    width:30px;
+    height:2px;
     background:#0066CC;
-    transform: translateY(-50%);
+    transform:translateY(-50%);
 }
