@@ -21,10 +21,71 @@ body {
     animation: blink 1s infinite;
 }
 
+/* GRAND HEXAGONE À GAUCHE */
 .missions-title {
     position: absolute;
     left: 0;
     top: 150px;
+
+    width: 170px;
+    height: 170px;
+
+    background: #0066CC;
+
+    clip-path: polygon(
+        25% 3%,
+        75% 3%,
+        100% 50%,
+        75% 97%,
+        25% 97%,
+        0% 50%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 5;
+}
+
+/* Intérieur blanc pour créer le contour */
+.missions-title::before {
+    content: "";
+    position: absolute;
+
+    inset: 2px;
+
+    background: white;
+
+    clip-path: polygon(
+        25% 3%,
+        75% 3%,
+        100% 50%,
+        75% 97%,
+        25% 97%,
+        0% 50%
+    );
+
+    z-index: -1;
+}
+
+.missions-title strong {
+    color: #0066CC;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.missions-title span {
+    color: #4b4b4b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes blink {
