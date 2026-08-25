@@ -154,54 +154,53 @@ section {
   color: #ffd166 !important;
 }
 /* NUMÉRO */
+/* HEXAGONE NUMÉRO */
 .mission-number {
     position: relative;
     z-index: 3;
 
     width: 70px;
     height: 70px;
-
     flex-shrink: 0;
-
-    background: #0066CC;
-
-    clip-path: polygon(
-        25% 0%,
-        75% 0%,
-        100% 50%,
-        75% 100%,
-        25% 100%,
-        0% 50%
-    );
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     color: #0066CC;
-
     font-size: 24px;
     font-weight: bold;
+
+    background: transparent;
+    isolation: isolate;
 }
 
-/* Intérieur blanc : crée un contour bleu net */
+/* Couche extérieure bleue */
 .mission-number::before {
     content: "";
-
     position: absolute;
-
-    inset: 2px;
-
-    background: white;
-
+    inset: 0;
+    background: #0066CC;
     clip-path: polygon(
-        25% 0%,
-        75% 0%,
+        25% 0%, 75% 0%,
         100% 50%,
-        75% 100%,
-        25% 100%,
+        75% 100%, 25% 100%,
         0% 50%
     );
+    z-index: -2;
+}
 
+/* Couche intérieure blanche */
+.mission-number::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+    clip-path: polygon(
+        25% 0%, 75% 0%,
+        100% 50%,
+        75% 100%, 25% 100%,
+        0% 50%
+    );
     z-index: -1;
 }
