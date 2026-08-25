@@ -71,6 +71,21 @@ body {
 
     z-index: -1;
 }
+.missions-title img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    clip-path: polygon(
+        25% 3%,
+        75% 3%,
+        100% 50%,
+        75% 97%,
+        25% 97%,
+        0% 50%
+    );
+}
 
 .missions-title strong {
     color: #0066CC;
