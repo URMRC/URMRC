@@ -428,3 +428,330 @@ section {
         margin: 20px auto;
     }
 }
+/* ==========================================================
+   CORRECTION FINALE DU DIAGRAMME DES MISSIONS
+   À METTRE TOUT À LA FIN DU <style>
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   POLICE ET COULEURS GÉNÉRALES
+   ---------------------------------------------------------- */
+
+.missions-container,
+.missions-container * {
+    font-family: Arial, sans-serif !important;
+}
+
+
+/* ----------------------------------------------------------
+   TITRES DE TOUTES LES MISSIONS
+   ---------------------------------------------------------- */
+
+.mission-content h3,
+.mission-fourth-row .mission-card h3 {
+    color: #0066CC !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 18px !important;
+
+    line-height: 1.3 !important;
+
+    font-weight: bold !important;
+
+    text-transform: uppercase !important;
+
+    margin: 0 0 8px 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   TEXTES DE TOUTES LES MISSIONS
+   ---------------------------------------------------------- */
+
+.mission-content p,
+.mission-fourth-row .mission-card p {
+    color: #4b4b4b !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.5 !important;
+
+    font-weight: normal !important;
+
+    margin: 0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   HEXAGONES DES NUMÉROS
+   ---------------------------------------------------------- */
+
+.mission-number {
+    position: relative !important;
+
+    width: 70px !important;
+    height: 70px !important;
+
+    flex: 0 0 70px !important;
+
+    background: white !important;
+
+    border: none !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #0066CC !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 22px !important;
+
+    font-weight: bold !important;
+
+    clip-path: none !important;
+
+    z-index: 3 !important;
+}
+
+
+/* HEXAGONE BLEU EXTÉRIEUR */
+
+.mission-number::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: #0066CC;
+
+    clip-path: polygon(
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0 50%
+    );
+
+    z-index: -2;
+}
+
+
+/* INTÉRIEUR BLANC */
+
+.mission-number::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 2px;
+
+    background: white;
+
+    clip-path: polygon(
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0 50%
+    );
+
+    z-index: -1;
+}
+
+
+/* ----------------------------------------------------------
+   LIGNE HORIZONTALE ENTRE HEXAGONE ET RECTANGLE
+   ---------------------------------------------------------- */
+
+.mission::after {
+    content: "";
+
+    position: absolute;
+
+    left: 70px;
+
+    top: 50%;
+
+    width: 55px;
+
+    height: 2px;
+
+    background: #0066CC;
+
+    transform: translateY(-50%);
+
+    z-index: 1;
+}
+
+
+/* ----------------------------------------------------------
+   RECTANGLES 1, 2, 3 ET 5
+   ---------------------------------------------------------- */
+
+.mission-content {
+    width: 650px !important;
+
+    max-width: 650px !important;
+
+    margin-left: 55px !important;
+
+    padding: 18px 25px !important;
+
+    border: 2px dashed #0066CC !important;
+
+    border-radius: 18px !important;
+
+    background: white !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ----------------------------------------------------------
+   MISSION 4 : ALIGNEMENT EXACT AVEC LES AUTRES
+   ---------------------------------------------------------- */
+
+.mission-fourth-row {
+    display: grid !important;
+
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 10px !important;
+
+    width: 650px !important;
+
+    max-width: 650px !important;
+
+    margin-left: 55px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ----------------------------------------------------------
+   RECTANGLES DE LA MISSION 4
+   ---------------------------------------------------------- */
+
+.mission-fourth-row .mission-card {
+    width: 100% !important;
+
+    min-height: 155px !important;
+
+    padding: 18px 20px !important;
+
+    border: 2px dashed #0066CC !important;
+
+    border-radius: 18px !important;
+
+    background: white !important;
+
+    box-sizing: border-box !important;
+
+    color: #4b4b4b !important;
+
+    font-family: Arial, sans-serif !important;
+}
+
+
+/* ----------------------------------------------------------
+   TITRE "MISSIONS" DANS L'HEXAGONE
+   ---------------------------------------------------------- */
+
+.missions-title strong {
+    color: #0066CC !important;
+
+    font-family: Arial, sans-serif !important;
+
+    font-size: 16px !important;
+
+    line-height: 1.2 !important;
+
+    font-weight: bold !important;
+}
+
+
+/* ----------------------------------------------------------
+   IMAGE ROBOT
+   ---------------------------------------------------------- */
+
+.missions-title img {
+    width: 115px !important;
+
+    height: 115px !important;
+
+    object-fit: contain !important;
+
+    object-position: center !important;
+}
+
+
+/* ----------------------------------------------------------
+   LIGNE VERTICALE
+   ---------------------------------------------------------- */
+
+.missions-list::before {
+    left: 35px !important;
+
+    width: 2px !important;
+
+    background: #bfc4c9 !important;
+
+    z-index: 1 !important;
+}
+
+
+/* ----------------------------------------------------------
+   ALIGNEMENT VERTICAL
+   ---------------------------------------------------------- */
+
+.mission {
+    position: relative !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    min-height: 120px !important;
+
+    margin-bottom: 18px !important;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+   ---------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .mission-fourth-row {
+        width: calc(100% - 120px) !important;
+
+        max-width: none !important;
+
+        margin-left: 40px !important;
+
+        grid-template-columns: 1fr !important;
+    }
+
+    .mission-content {
+        width: calc(100% - 120px) !important;
+
+        max-width: none !important;
+
+        margin-left: 40px !important;
+    }
+
+    .mission::after {
+        width: 40px !important;
+    }
+}
