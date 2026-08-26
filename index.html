@@ -805,7 +805,372 @@ background:url('images/urmrc24.png') center center/cover no-repeat;
             <h2 data-aos="fade-right">Overview</h2>
             <p class="section-subtitle">Teams develop advanced algorithms to tackle a series of challenges in mobile robotics using the TurtleBot robot:</p>
 <style>
+.missions-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+}
 
+/* GRAND HEXAGONE À GAUCHE */
+.missions-title {
+    position: absolute;
+    left: 0;
+    top: 150px;
+
+    width: 170px;
+    height: 170px;
+
+    background: white;
+    border: 2px solid #0066CC;
+
+    clip-path: polygon(
+        27% 2%,
+        73% 2%,
+        96% 50%,
+        73% 98%,
+        27% 98%,
+        4% 50%
+    );
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    z-index: 5;
+}
+
+.missions-title strong {
+    color: #0066CC;
+    font-size: 20px;
+}
+
+.missions-title span {
+    color: #4b4b4b;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+/* CONTENEUR DES MISSIONS */
+.missions-list {
+    margin-left: 180px;
+    width: calc(100% - 210px);
+}
+
+
+/* MISSION */
+.mission {
+    display: flex;
+    align-items: center;
+
+    min-height: 120px;
+    margin-bottom: 18px;
+
+    position: relative;
+}
+
+
+/* NUMÉRO */
+.mission-number {
+    position: relative;
+    z-index: 3;
+
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border: 2px solid #0066CC;
+
+    clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0066CC;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* PETIT TRAIT */
+.mission-number::after {
+    content: "";
+
+    position: absolute;
+
+    left: 70px;
+    top: 50%;
+
+    width: 30px;
+    height: 2px;
+
+    background: #0066CC;
+}
+
+
+/* RECTANGLE DE LA MISSION */
+.mission-content {
+
+    /* IMPORTANT : largeur réduite */
+    width: 650px;
+    max-width: 650px;
+
+    margin-left: 55px;
+
+    border: 2px dashed #0066CC;
+
+    border-radius: 18px;
+
+    padding: 20px 28px;
+
+    background: white;
+
+    box-sizing: border-box;
+}
+
+
+/* TITRE */
+.mission-content h3 {
+
+    margin: 0 0 10px 0;
+
+    color: #0066CC;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+/* TEXTE */
+.mission-content p {
+
+    margin: 0;
+
+    color: #4b4b4b;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* LIGNE VERTICALE */
+.missions-list::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 215px;
+
+    top: 50px;
+
+    height: calc(100% - 100px);
+
+    width: 2px;
+
+    background: #bfc4c9;
+
+    z-index: 1;
+}
+
+
+/* PETITS ÉCRANS */
+@media (max-width: 900px) {
+
+    .missions-title {
+        display: none;
+    }
+
+    .missions-list {
+
+        margin-left: 0;
+
+        width: 100%;
+    }
+
+    .mission-content {
+
+        width: calc(100% - 120px);
+
+        max-width: none;
+
+        margin-left: 40px;
+    }
+
+    .missions-list::before {
+
+        left: 35px;
+    }
+}
+</style>
+
+
+<div class="missions-container">
+
+    <!-- GRAND HEXAGONE -->
+    <div class="missions-title">
+
+        <strong>MISSIONS</strong>
+
+        <!-- span>DU ROBOT</span-->
+        <img src="images/robot-without-background.png" alt="Robot">
+
+    </div>
+
+
+    <!-- LISTE DES MISSIONS -->
+    <div class="missions-list">
+
+
+        <!-- 01 -->
+        <div class="mission">
+
+            <div class="mission-number">
+                01
+            </div>
+
+            <div class="mission-content">
+
+                <h3>Line Following</h3>
+
+                <p>
+                    The robot follows a straight and curved track and stops
+                    when it detects a black-and-white checkerboard.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 02 -->
+        <div class="mission">
+
+            <div class="mission-number">
+                02
+            </div>
+
+            <div class="mission-content">
+
+                <h3>Obstacle Avoidance – Open Area</h3>
+
+                <p>
+                    The robot avoids randomly placed obstacles within a marked
+                    area and stops before a barrier.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 03 -->
+        <div class="mission">
+
+            <div class="mission-number">
+                03
+            </div>
+
+            <div class="mission-content">
+
+                <h3>Obstacle Avoidance – Closed Area</h3>
+
+                <p>
+                    The robot crosses the area while avoiding obstacles.
+                    Camera use is prohibited inside.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 04 -->
+        <div class="mission">
+
+            <div class="mission-number">
+                04
+            </div>
+
+            <div class="mission-fourth-row">
+
+                <!-- PARKING -->
+                <div class="mission-card">
+
+                    <h3>Parking</h3>
+
+                    <p>
+                        The robot detects the parking area, identifies an available
+                        space, and parks correctly.
+                    </p>
+
+                </div>
+
+
+                <!-- STORAGE / RETRIEVAL -->
+                <div class="mission-card">
+
+                    <h3>Storage/Retrieval Operation</h3>
+
+                    <p>
+                        The robot detects the occupied storage area, picks up the pallet,
+                        moves it from zone ① to zone ② without crossing other zones,
+                        and releases it correctly at the center.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- 05 -->
+        <div class="mission">
+
+            <div class="mission-number">
+                05
+            </div>
+
+            <div class="mission-content">
+
+                <h3>Fifth Mission</h3>
+
+                <p>
+                    Execute all missions in sequence.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
 /* =========================================================
    CONTENEUR PRINCIPAL
    ========================================================= */
