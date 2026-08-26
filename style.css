@@ -225,3 +225,54 @@ section {
 .mission-number {
     z-index: 2;
 }
+/* =====================================
+   4e MISSION : DEUX RECTANGLES
+   ===================================== */
+
+.mission-fourth-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* Rectangle de chaque mission */
+.mission-fourth-row .mission-card {
+    border: 2px dashed #0066CC;
+    border-radius: 20px;
+
+    padding: 25px 30px;
+
+    background: #fff;
+    box-sizing: border-box;
+
+    min-height: 155px;
+}
+
+/* Titres */
+.mission-fourth-row .mission-card h2 {
+    margin: 0 0 12px 0;
+
+    color: #0066CC;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Description */
+.mission-fourth-row .mission-card p {
+    margin: 0;
+
+    color: #222;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive : sur petit écran, les deux rectangles
+   passent l'un sous l'autre */
+@media (max-width: 768px) {
+    .mission-fourth-row {
+        grid-template-columns: 1fr;
+    }
+}
