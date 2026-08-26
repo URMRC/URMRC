@@ -156,37 +156,71 @@ section {
 /* NUMÉRO */
 /* HEXAGONE NUMÉRO */
 /* HEXAGONE NUMÉRO */
-.mission-number{
+/* ================================
+   NUMÉROS DES MISSIONS
+   HEXAGONE AVEC CONTOUR UNIQUEMENT
+   ================================ */
+
+.mission-number {
     position: relative;
     width: 70px;
     height: 70px;
     flex-shrink: 0;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    color:#0066CC;
-    font-size:24px;
-    font-weight:bold;
+    color: #0066CC;
+    font-size: 24px;
+    font-weight: bold;
+
+    /* Permet aux pseudo-éléments de rester dans le composant */
+    isolation: isolate;
 }
 
-/* contour bleu */
-.mission-number::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:#0066CC;
-    clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
-    z-index:-2;
+/* Contour bleu de l'hexagone */
+.mission-number::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: #0066CC;
+
+    clip-path: polygon(
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0 50%
+    );
+
+    z-index: 0;
 }
 
-/* intérieur blanc */
-.mission-number::after{
-    content:"";
-    position:absolute;
-    inset:2px;
-    background:#fff;
-    clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
-    z-index:-1;
+/* Intérieur blanc = effet contour */
+.mission-number::after {
+    content: "";
+    position: absolute;
+
+    inset: 2px;
+
+    background: #fff;
+
+    clip-path: polygon(
+        25% 0,
+        75% 0,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0 50%
+    );
+
+    z-index: 1;
+}
+
+/* Le numéro reste au-dessus de l'hexagone */
+.mission-number {
+    z-index: 2;
 }
