@@ -310,10 +310,6 @@ section {
 }
 ```
 
-
-
-
-
 /* Responsive */
 @media (max-width: 768px) {
     .mission-fourth-row {
@@ -323,23 +319,6 @@ section {
     }
 }
 
-/* Titres */
-.mission-fourth-row .mission-card h2 {
-    margin: 0 0 12px 0;
-
-    color: #0066CC;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-/* Description */
-.mission-fourth-row .mission-card p {
-    margin: 0;
-
-    color: #222;
-    font-size: 16px;
-    line-height: 1.6;
-}
 
 /* Responsive : sur petit écran, les deux rectangles
    passent l'un sous l'autre */
