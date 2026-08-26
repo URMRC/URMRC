@@ -777,11 +777,5 @@ section {
     background: transparent !important;
 }
 
-/* Supprime également les éventuelles bordures verticales */
-.mission,
-.mission-content,
-.mission-number {
-    border-left: none !important;
-    border-right: none !important;
-}
+
 
