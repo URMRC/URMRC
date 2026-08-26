@@ -228,54 +228,91 @@ section {
 /* =====================================
    4e MISSION : DEUX RECTANGLES
    ===================================== */
-
+```css
 /* =====================================
    4e MISSION : DEUX RECTANGLES
-   ALIGNÉE AVEC LES AUTRES MISSIONS
+   STYLE COHÉRENT AVEC LES AUTRES MISSIONS
    ===================================== */
 
 .mission-fourth-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 14px;
+    gap: 10px;
 
-    /* Même largeur visuelle que les autres missions */
+    /* Alignement avec les autres cartes */
     width: calc(100% - 40px);
     margin: 1rem 0 1rem 40px;
 
     box-sizing: border-box;
 }
 
-/* Rectangle de chaque mission */
+/* =====================================
+   CARTES DE LA 4e MISSION
+   ===================================== */
+
 .mission-fourth-row .mission-card {
     border: 2px dashed #0066CC;
     border-radius: 20px;
 
-    padding: 20px 22px;
+    padding: 16px 18px;
 
     background: #fff;
     box-sizing: border-box;
 
     min-height: 155px;
+
+    /* Même police que le reste de la page */
+    font-family: Arial, sans-serif;
+    color: #222;
 }
 
-/* Titres */
+/* =====================================
+   TITRES : MÊME STYLE QUE LES AUTRES
+   ===================================== */
+
 .mission-fourth-row .mission-card h2 {
     margin: 0 0 8px 0;
 
-    color: #0066CC;
+    font-family: Arial, sans-serif;
     font-size: 16px;
+    line-height: 1.4;
     font-weight: bold;
+
+    color: #0066CC;
 }
 
-/* Description */
+/* =====================================
+   DESCRIPTION : MÊME STYLE QUE LES AUTRES
+   ===================================== */
+
 .mission-fourth-row .mission-card p {
     margin: 0;
 
-    color: #222;
+    font-family: Arial, sans-serif;
     font-size: 13px;
     line-height: 1.6;
+    font-weight: normal;
+
+    color: #222;
 }
+
+/* =====================================
+   RESPONSIVE
+   ===================================== */
+
+@media (max-width: 768px) {
+    .mission-fourth-row {
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        margin-left: 0;
+    }
+}
+```
+
+
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
