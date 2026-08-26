@@ -700,13 +700,7 @@ section {
    ---------------------------------------------------------- */
 
 .missions-list::before {
-    left: 35px !important;
-
-    width: 2px !important;
-
-    background: #bfc4c9 !important;
-
-    z-index: 1 !important;
+    display: none !important;
 }
 
 
