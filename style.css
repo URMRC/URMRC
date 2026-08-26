@@ -749,3 +749,39 @@ section {
         width: 40px !important;
     }
 }
+/* ==========================================================
+   SUPPRESSION FORCÉE DE TOUS LES TRAITS VERTICAUX
+   ========================================================== */
+
+.missions-list {
+    border-left: none !important;
+    border-right: none !important;
+    background-image: none !important;
+}
+
+.missions-list::before,
+.missions-list::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: transparent !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.missions-container::before,
+.missions-container::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Supprime également les éventuelles bordures verticales */
+.mission,
+.mission-content,
+.mission-number {
+    border-left: none !important;
+    border-right: none !important;
+}
+
