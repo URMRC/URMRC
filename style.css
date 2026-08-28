@@ -777,5 +777,15 @@ section {
     background: transparent !important;
 }
 
+.mission-number {
+    z-index: 2;
+}
 
+.mission-number::before {
+    z-index: -2;
+}
+
+.mission-number::after {
+    z-index: -1;
+}
 
