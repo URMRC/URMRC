@@ -72,7 +72,6 @@ section {
     margin-bottom: 3rem;
 }
 
-
 /* =========================================================
    NAVBAR FIXE — BLANC TRANSPARENT + TEXTE BLEU FONCÉ
    ========================================================= */
@@ -85,7 +84,7 @@ section {
     z-index: 9999;
 
     /* Blanc transparent */
-    background: rgba(255, 255, 255, 0.4) !important;
+    background: rgba(255, 255, 255, 0.80) !important;
 
     /* Effet verre */
     backdrop-filter: blur(10px);
@@ -98,10 +97,7 @@ section {
 }
 
 
-/* ---------------------------------------------------------
-   CONTENU DE LA NAVBAR
-   --------------------------------------------------------- */
-
+/* CONTENU */
 .navbar .container {
     display: flex;
     align-items: center;
@@ -112,24 +108,7 @@ section {
 }
 
 
-/* ---------------------------------------------------------
-   LOGO + TITRE
-   --------------------------------------------------------- */
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-
-    color: #003B6F !important;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-
-/* ---------------------------------------------------------
-   LOGO
-   --------------------------------------------------------- */
-
+/* LOGO */
 .navbar-logo {
     height: 60px;
     width: auto;
@@ -137,43 +116,36 @@ section {
 }
 
 
-/* ---------------------------------------------------------
-   LIENS : HOME, OVERVIEW, ORGANIZATION...
-   --------------------------------------------------------- */
-
-.navbar .nav-link {
+/* LIENS DU MENU */
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar .nav-link,
+.navbar .nav-link:link,
+.navbar .nav-link:visited {
     color: #003B6F !important;
-
-    font-weight: 600;
-
+    font-weight: 600 !important;
+    text-decoration: none !important;
 }
 
 
-/* ---------------------------------------------------------
-   SURVOL
-   --------------------------------------------------------- */
-
+/* SURVOL */
+.navbar a:hover,
 .navbar .nav-link:hover {
     color: #0066CC !important;
 }
 
 
-/* ---------------------------------------------------------
-   ESPACE POUR LA NAVBAR FIXE
-   --------------------------------------------------------- */
-
-body {
-    padding-top: 110px;
+/* LIEN ACTIF */
+.navbar .nav-link.active {
+    color: #003B6F !important;
+    font-weight: bold !important;
 }
 
 
-/* ---------------------------------------------------------
-   LIEN ACTIF
-   --------------------------------------------------------- */
-
-.navbar .nav-link.active {
-    color: #003B6F !important;
-    font-weight: bold;
+/* ESPACE POUR LA NAVBAR FIXE */
+body {
+    padding-top: 110px;
 }
 /* =========================================================
    GRAND HEXAGONE "MISSIONS"
