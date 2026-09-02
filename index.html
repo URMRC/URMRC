@@ -559,27 +559,27 @@
         
         #registration {
             background: var(--light-bg);
-            color: var(--white);
-            text-align: center;
-            padding: 100px 0;
         }
 
-        #registration h2 {
-            color: var(--white);
-        }
-
-        #registration h2::after {
+        .registration-card {
             background: var(--white);
-            opacity: 0.7;
-        }
-
-        .registration-content {
-            margin-top: 2rem;
-        }
-
-        .registration-info {
-            font-size: 1.3rem;
+            padding: 2rem;
+            border-radius: 10px;
             margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .registration-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);5
+        }
+
+        .registration-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
 
         .urgent-notice {
