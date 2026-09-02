@@ -85,7 +85,7 @@ section {
     z-index: 9999;
 
     /* Blanc transparent */
-    background: rgba(255, 255, 255, 0.6) !important;
+    background: rgba(255, 255, 255, 0.5) !important;
 
     /* Effet verre */
     backdrop-filter: blur(10px);
@@ -838,6 +838,12 @@ li {
 }
 
 .missions-container::before,
+.missions-container::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: transparent !important;
+}
 .missions-container::after {
     display: none !important;
     content: none !important;
