@@ -850,3 +850,28 @@ li {
     border: none !important;
     background: transparent !important;
 }
+/* ==========================================================
+   FORCER LES LIENS DU MENU EN BLEU FONCÉ
+   ========================================================== */
+
+.navbar a,
+.navbar a:link,
+.navbar a:visited,
+.navbar a strong,
+.navbar a b,
+.navbar .nav-link,
+.navbar .nav-link:link,
+.navbar .nav-link:visited,
+.navbar .nav-link strong {
+    color: #003B6F !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+/* SURVOL */
+.navbar a:hover,
+.navbar a:hover strong,
+.navbar .nav-link:hover,
+.navbar .nav-link:hover strong {
+    color: #0066CC !important;
+}
