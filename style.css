@@ -79,7 +79,7 @@ section {
 }
 
 /* =========================================================
-   NAVBAR FIXE — BLANC TRANSPARENT + TEXTE BLEU FONCÉ
+   NAVBAR : la bande en haut 
    ========================================================= */
 
 .navbar {
@@ -102,8 +102,6 @@ section {
     padding: 8px 0;
 }
 
-
-/* CONTENU */
 .navbar .container {
     display: flex;
     align-items: center;
@@ -154,7 +152,7 @@ body {
     padding-top: 110px;
 }
 /* =========================================================
-   GRAND HEXAGONE "MISSIONS"
+   Grand Hexagonal dans la setion des MISSIONS
    ========================================================= */
 
 .missions-title {
