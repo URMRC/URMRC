@@ -65,7 +65,7 @@ body {
     transform: translateY(-10px);
 }
 /* =========================================================
-   CONTAINER
+   La largeur du contenu
    ========================================================= */
 
 .container {
@@ -206,8 +206,9 @@ body {
     z-index: -1;
 }
 
-
-/* Image dans l'hexagone */
+/* =========================================================
+   la photo du turtle dans le grand Hexagonal
+   ========================================================= */
 
 .missions-title img {
     width: 100%;
@@ -237,7 +238,7 @@ li {
     display: inline;
 }
 
-/* Mot MISSIONS */
+/* Mot missions dans le grand diagonal */
 
 .missions-title strong {
     color: #0066CC;
@@ -253,8 +254,9 @@ li {
     z-index: 2;
 }
 
-
-/* Texte secondaire dans l'hexagone */
+/* =========================================================
+   Les hexagonaux
+   ========================================================= */
 
 .missions-title span {
     color: #4b4b4b;
@@ -304,7 +306,6 @@ li {
     z-index: 2;
 }
 
-/* Hexagone bleu plein */
 .mission-number::before{
     content: "";
     position: absolute;
@@ -327,7 +328,6 @@ li {
 }
 
 
-
 /* =========================================================
    CARTES GÉNÉRALES
    ========================================================= */
@@ -347,7 +347,7 @@ li {
 
 
 /* =========================================================
-   EMAIL DES MEMBRES
+   Les emails des membres
    ========================================================= */
 
 .member-email {
@@ -365,7 +365,7 @@ li {
 
 
 /* =========================================================
-   4e MISSION : DEUX RECTANGLES
+   Les deux rectangle de la mission 4
    ========================================================= */
 
 .mission-fourth-row {
@@ -472,14 +472,10 @@ li {
         margin: 20px auto;
     }
 }
-/* ==========================================================
-   CORRECTION FINALE DU DIAGRAMME DES MISSIONS
-   À METTRE TOUT À LA FIN DU <style>
-   ========================================================== */
 
 
 /* ----------------------------------------------------------
-   POLICE ET COULEURS GÉNÉRALES
+   Police du text dans les rectangles des missions
    ---------------------------------------------------------- */
 
 .missions-container,
@@ -487,10 +483,6 @@ li {
     font-family: Arial, sans-serif !important;
 }
 
-
-/* ----------------------------------------------------------
-   TITRES DE TOUTES LES MISSIONS
-   ---------------------------------------------------------- */
 
 .mission-content h3,
 .mission-fourth-row .mission-card h3 {
@@ -565,7 +557,7 @@ li {
 }
 
 
-/* HEXAGONE BLEU EXTÉRIEUR */
+/* Les formes hexagonales de chaque mission */
 
 .mission-number::before {
     content: "";
@@ -587,9 +579,6 @@ li {
 
     z-index: -2;
 }
-
-
-/* INTÉRIEUR BLANC */
 
 .mission-number::after {
     content: "";
